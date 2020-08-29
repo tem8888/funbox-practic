@@ -6,8 +6,8 @@ const Pack = (props) => {
 			<div className={props.disableClass ? 'pack disabled' : props.isActive ? 'pack picked' : 'pack '} onClick={props.onclick}>
 				<div className='info-pack'>
 					<p>Сказочное заморское явство</p>
-					<p>Нямушка</p>
-					<p>{props.topping}</p>
+					<h1>Нямушка</h1>
+					<h2>{props.topping}</h2>
 					<p><b>{props.portion}</b> порций<br/>{props.gift}</p>
 				</div>
 				<div className='weight'><span>{props.weight}</span><span className='kg'>кг</span></div>

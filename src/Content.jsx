@@ -7,7 +7,7 @@ class Content extends React.Component {
 		super(props);
 		this.state = {
 			data: [
-				{ topping: 'с фуа-гра', portion: '10', gift: 'мышь в подарок', weight: '0,2'},
+				{ topping: 'с фуа-гра', portion: '10', gift: '1 мышь в подарок', weight: '0,2'},
 				{ topping: 'с рыбой', portion: '40', gift: '2 мыши в подарок',  descr: 'Головы щучьи с чесноком, да свежайшая сёмгушка.', weight: '2'},
 				{ topping: 'с курой', portion: '100', gift: '5 мышей в подарок',  descr: 'Печалька, с курой закончился.', weight: '5'}
 			],
@@ -26,9 +26,9 @@ class Content extends React.Component {
 
 	render () {
 		return (
-			<div className="container">
+			<div className='container'>
 				<div className='header'>
-					<h1>Ты сегодня покормил кота?</h1>
+					<span class='head-text'>Ты сегодня покормил кота?</span>
 				</div>
 
 				<Pack topping={this.state.data[0].topping} portion={this.state.data[0].portion} gift={this.state.data[0].gift} weight={this.state.data[0].weight}

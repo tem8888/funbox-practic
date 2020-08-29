@@ -7,7 +7,7 @@ $disablecolor: #d3d3d3
 
 body
 	background-image: url('../assets/images/prototype_0001_Shadow.png'), url('../assets/images/prototype_0002_Pattern.png')
-	background-size: cover, cover
+	background-size: cover, auto
 	background-repeat: no-repeat, repeat
 	background-position: center, center
 	background-attachment: fixed, fixed
@@ -29,9 +29,15 @@ body
 	margin: auto 0
 
 h1
+	font-size: 48px
+	margin: 0
+h2
+	font-size: 24px
+.head-text
 	font-family: 'Exo2.0-Thin', sans-serif
 	font-size: 36px
-	text-align: center
+	margin: 26px 0
+	display: block
 	
 .container 
 	max-width: 1800px
@@ -62,7 +68,8 @@ h1
 	width: 320px
 	overflow: hidden
 	font-size: 14px
-
+	h1, h2
+		margin: 0 0 0 46px
 	&:after, &:before
 		background-color: #f2f2f2
 		content: ""
@@ -100,20 +107,16 @@ h1
 		.weight
 			background-color: $packcolor-h
 	.info-pack
-		text-align: left
-		p
-			margin: 20px 0 0 49px
-			line-height: 20px
+		text-align: left	
 		p:first-child
-			color: #666666
 			font-size: 16px
+			line-height: 20px
+			margin: 19px 0 4px 46px
 		p:nth-of-type(2)
-			font-size: 48px
-		p:nth-of-type(3)
-			font-size: 24px
-		p:nth-of-type(4)
 			color: #666666
 			font-size: 14px
+			line-height: 18px
+			margin: 12px 0 0 46px
 	.weight
 		color: white
 		font-size: 42px

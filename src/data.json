@@ -1,0 +1,29 @@
+{
+	"0":{
+		"topping": "с фуа-гра",
+		"portion": "10",
+		"gift": "1",
+		"weight": "0,2",
+		"descrDisabled": "Печалька, с фуа-гра закончился.",
+		"descrPicked": "ммм...фуа-гра",
+		"isDisabled": "0"
+	},
+	"1":{ 
+		"topping": "с рыбой", 
+		"portion": "40", 
+		"gift": "2", 
+		"weight": "2", 
+		"descrDisabled": "Печалька, с рыбой закончился." , 
+		"descrPicked": "Головы щучьи с чесноком, да свежайшая сёмгушка.",
+		"isDisabled": "0"
+	},
+	"2":{ 
+		"topping": "с курой", 
+		"portion": "100", 
+		"gift": "5", 
+		"weight": "5", 
+		"descrDisabled": "Печалька, с курой закончился." , 
+		"descrPicked": "Последняя кура специально для вас.",
+		"isDisabled": "1"
+	}
+}

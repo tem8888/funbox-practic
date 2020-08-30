@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 
 const Block = ({id, info, descrOffer, picked, disabled, status, setStatus}) => {
-	console.log(disabled)
+	
 	// Функция подбора правильного склонения для названий товаров, подарков и тд в зависимости от их количества
 	const decl = (n, fras) => {  
 		return fras[n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2];

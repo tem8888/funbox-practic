@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
 	mode: 'development',
 	entry: {
-		main: './src/index.jsx'
+		main: './src/index.js'
 	},
 	output: {
 		filename: 'bundle.js',
@@ -26,6 +26,10 @@ module.exports = {
 			patterns: [
 				{
 					from: path.resolve(__dirname, 'src/favicon.ico'),
+					to: path.resolve(__dirname, 'public')
+				},
+				{
+					from: path.resolve(__dirname, 'src/data.json'),
 					to: path.resolve(__dirname, 'public')
 				}
 			]
@@ -50,7 +54,7 @@ module.exports = {
 				use: ['file-loader']
 			},
 			{
-				test: /\.jsx$/,
+				test: /\.(js|jsx)$/,
 				loader: {
 					loader: 'babel-loader',
 					options: {

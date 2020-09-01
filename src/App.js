@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState} from 'react'
 import Block from './components/Block'
 // загружаем данные о товарах, так будет удобнее добавлять новые
 // файл также передает информацию, доступен ли товар для выбора
@@ -6,14 +6,14 @@ import Data from './data.json'
 
 function App() {
 	
-    // Создаем хук состояния с дефолтными значениями
-    const [status, setStatus] = useState([
-    		{ id: 0, picked: false},
-            { id: 1, picked: false},
-            { id: 2, picked: false}])
+	// Создаем хук состояния с дефолтными значениями
+	const [status, setStatus] = useState([
+		{ id: 0, picked: false},
+		{ id: 1, picked: false},
+		{ id: 2, picked: false}])
 
-    return (
-        <div className='container'>
+	return (
+		<div className='container'>
 			<div className='header'>
 				<span className='head-text'>Ты сегодня покормил кота?</span>
 			</div>
@@ -29,7 +29,7 @@ function App() {
 				/>
 			))}
 		</div>
-    )
+	)
 }
 
 export default App

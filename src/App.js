@@ -6,17 +6,11 @@ import Data from './data.json'
 
 function App() {
 	
-    // Создаем состояние status и его метод setStatus
-    const [status, setStatus] = useState([])
-
-    // создание начальных состояний при загрузке страницы
-    useEffect(() => {
-        setStatus([
-            { id: 0, picked: false},
+    // Создаем хук состояния с дефолтными значениями
+    const [status, setStatus] = useState([
+    		{ id: 0, picked: false},
             { id: 1, picked: false},
-            { id: 2, picked: false}
-        ])
-    }, [])
+            { id: 2, picked: false}])
 
     return (
         <div className='container'>

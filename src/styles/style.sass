@@ -34,10 +34,10 @@ h1
 h2
 	font-size: 24px
 .head-text
-	font-family: 'Exo2.0-Thin', sans-serif
-	font-size: 36px
 	margin: 26px 0
 	display: block
+	font-family: 'Exo2.0-Thin', sans-serif
+	font-size: 36px
 	
 .container 
 	max-width: 1800px
@@ -62,33 +62,33 @@ h2
 				color: $packcolor-h
 
 .pack
-	color: #000
 	position: relative
 	height: 480px
 	width: 320px
 	overflow: hidden
 	font-size: 14px
+	cursor: pointer
+	color: #000
 	h1, h2
 		margin: 0 0 0 46px
 	&:after, &:before
-		background-color: #f2f2f2
 		content: ""
+		z-index: -1
 		position: absolute
 		right: 0px
 		width: 100%
-		z-index: -1
 		box-sizing: content-box
+		background-color: #f2f2f2
 	&:before 
 		height: 66px
 		top: -22px
 		border: 4px solid $packcolor
 		border-width: 6px 4px 0px 5px
 		transform-origin: 100% 90%
-		border-top-right-radius: 10px
 		transform: perspective(300px) rotateX(45deg)
 		box-sizing: border-box
 		width: calc(100% - 3px)
-
+		border-top-right-radius: 10px
 	&:after 
 		background-image: url('../assets/images/Photo.png')
 		background-repeat: no-repeat
@@ -118,25 +118,25 @@ h2
 			line-height: 18px
 			margin: 12px 0 0 46px
 	.weight
-		color: white
-		font-size: 42px
-		text-align: center
 		position: absolute
 		width: 80px
 		height: 80px
-		border-radius: 50%
 		right: 0
 		bottom: 0
 		margin: 0 15px 15px 0
-		background-color: $packcolor
+		font-size: 42px
+		text-align: center
 		line-height: 0.95
+		border-radius: 50%
+		color: white
+		background-color: $packcolor
 		span
 			position: relative
 			top: 10px
 		.kg
-			font-size: 21px
 			display: block
 			height: 21px
+			font-size: 21px
 
 
 .picked
